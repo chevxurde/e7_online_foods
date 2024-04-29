@@ -18,6 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
+    <link rel="icon" href="../images/dashboard.png" type="image/png"> 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css file link -->
@@ -33,7 +34,7 @@
 
         <div class="box-container">
             <div class="box">
-                <h3 class="fas fa-user"></h3>
+                <h1><img src="../images/analysis.png"alt=""></h1>
                 <p><?= $fetch_profile['name']; ?></p>
                 <a href="update_profile.php" class="btn">update profile</a>
             </div>
@@ -47,7 +48,7 @@
                         $total_pendings += $fetch_pendings['total_price'];
                     }
                 ?>
-                <h3><span>$</span><?= $total_pendings; ?><span>/ -</span></h3>
+                <h3><span>$</span><?= $total_pendings; ?></h3>
                 <p>total pendings</p>
                 <a href="placed_orders.php?payment_status=pending" class="btn">pending orders</a>
             </div>
@@ -61,7 +62,7 @@
                         $total_completes += $fetch_completes['total_price'];
                     }
                 ?>
-                <h3><span>$</span><?= $total_completes; ?><span>/-</span></h3>
+                <h3><span>$</span><?= $total_completes; ?></h3>
                 <p>total completes</p>
                 <a href="placed_orders.php?payment_status=completed" class="btn">complete orders</a>
             </div>

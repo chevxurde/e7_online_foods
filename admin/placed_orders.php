@@ -49,7 +49,7 @@
                 $select_orders->execute([$status_payment]);
                 if($status_payment == 'all'){
                     $select_orders = $con->prepare('SELECT * FROM `orders`');
-                $select_orders->execute();
+                    $select_orders->execute();
                 }
                 if($select_orders->rowCount() > 0){
                     while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){

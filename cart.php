@@ -41,6 +41,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+    <link rel="icon" href="images/icon.png" type="image/png"> 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font awesome cdn link -->
@@ -89,7 +90,7 @@
                <input type="number" name="qty" class="qty" min="1" max="99" value="<?= $fetch_cart['qty']; ?>" maxlength="2">
                <button type="submit" class="fas fa-edit" name="update_qty"></button>
             </div>
-            <div class="sub-total"> sub total : <span>$<?= $sub_total = ($fetch_cart['price'] * $fetch_cart['qty']); ?>/-</span> </div>
+            <div class="sub-total"> sub total : <span>$<?= $sub_total = ($fetch_cart['price'] * $fetch_cart['qty']); ?></span> </div>
          </form>
          <?php
                   $grand_total += $sub_total;

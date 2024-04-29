@@ -37,7 +37,17 @@
                 <i class="fas fa-shopping-cart"></i>
                 <span>(<?php echo $total_user_cart_items; ?>)</span>
             </a>
-            <div class="fas fa-user" id="user-btn"></div>
+            <?php
+                if(isset($_SESSION["user_id"])){
+                    ?>
+                        <div class="fa-solid fa-user-check fas" id="user-btn"></div> 
+                    <?php
+                }else{
+                    ?>
+                        <div class="fa-solid fa-user-xmark fas" id="user-btn" style="color: red;"></div>
+                    <?php
+                }
+            ?>    
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
 
