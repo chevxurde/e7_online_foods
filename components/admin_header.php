@@ -24,15 +24,26 @@
       <nav class="navbar">
          <a href="dashboard.php">home</a> 
          <a href="products.php">products</a>
-         <a href="placed_orders.php">orders</a>
+         <a href="placed_orders.php?payment_status=all">orders</a>
          <a href="account.php">admins</a>
          <a href="users_accounts.php">users</a>
          <a href="messages.php">messages</a>
       </nav>
 
       <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="user-btn" class="fas fa-user"></div>
+         <?php
+                if(isset($_SESSION["user_id"])){
+                    ?>
+                        <div class="fa-solid fa-user-check fas" id="user-btn" style="color: #158affa9;"></div> 
+                    <?php
+                }else{
+                    ?>
+                        <div class="fa-solid fa-user-xmark fas" id="user-btn" style="color: red;"></div>
+                    <?php
+                }
+            ?>  
+            <div id="menu-btn" class="fas fa-bars"></div>
+         <!-- <div id="user-btn" class="fas fa-user"></div> -->
       </div>
 
       <div class="profile">

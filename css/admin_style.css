@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
+.title{
+   color: var(--main-color);
+   font-size: 5rem;
+   text-align: center;
+   font-weight: 600;
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -20%);
+}
 :root{
    --main-color:#158affa9;
    --red:#e74c3c;
@@ -606,7 +615,9 @@ section{
 }
 
 @media (max-width:450px){
-
+   .title{
+      font-size: 3rem;
+   }
    html{
       font-size: 50%;
    }

@@ -108,7 +108,7 @@
                 ?>
                 <h3><?= $number_of_admins; ?></h3>
                 <p>admins</p>
-                <a href="accounts.php" class="btn">see admins</a>
+                <a href="account.php" class="btn">see admins</a>
             </div>
 
             <div class="box">

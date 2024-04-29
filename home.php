@@ -40,7 +40,7 @@
             <div class="slide">
                 <div class="content">
                     <span>order online</span>
-                    <h3>Welcome to our online food shop!</h3>
+                    <h3>Welcome to TK online foods shop!</h3>
                     <a href="menu.php" class="btn">see menus</a>
                 </div>
                 <div class="image">
