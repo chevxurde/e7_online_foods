@@ -108,7 +108,7 @@
                 <div class="box">
                     <img src="../uploaded_img/<?= $fetch_pros['image']; ?>" alt="">
                     <div class="flex">
-                        <div class="price"><span>$</span><?= $fetch_pros['price']; ?><span>/-</span></div>
+                        <div class="price"><span>$</span><?= $fetch_pros['price']; ?></div>
                         <div class="category"><?= $fetch_pros['category']; ?></div>
                     </div>
                     <div class="name"><?= $fetch_pros['name']; ?></div>
