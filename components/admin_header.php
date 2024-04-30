@@ -32,7 +32,7 @@
 
       <div class="icons">
          <?php
-                if(isset($_SESSION["user_id"])){
+                if(isset($_SESSION["admin_id"])){
                     ?>
                         <div class="fa-solid fa-user-check fas" id="user-btn" style="color: #158affa9;"></div> 
                     <?php
