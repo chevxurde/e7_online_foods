@@ -45,7 +45,6 @@
         <div class="box-container">
             <?php
                 $status_payment = isset($_GET['payment_status']) ? $_GET['payment_status'] : 'all';
-
                 //$status_payment = $_GET['payment_status'];
                 $select_orders = $con->prepare('SELECT * FROM `orders` WHERE payment_status = ?');
                 $select_orders->execute([$status_payment]);

@@ -130,7 +130,7 @@ section{
    left: 50%;
    transform: translate(-50%, -50%);
    margin:0 auto;
-   background-color: var(--red);
+   background-color: #158affa9;
    padding:2rem;
    display: flex;
    align-items: center;
