@@ -44,7 +44,9 @@
 
         <div class="box-container">
             <?php
-                $status_payment = $_GET['payment_status'];
+                $status_payment = isset($_GET['payment_status']) ? $_GET['payment_status'] : 'all';
+
+                //$status_payment = $_GET['payment_status'];
                 $select_orders = $con->prepare('SELECT * FROM `orders` WHERE payment_status = ?');
                 $select_orders->execute([$status_payment]);
                 if($status_payment == 'all'){
@@ -75,7 +77,7 @@
                         <div class="flex-btn">
                             <input type="submit" value="update" class="btn" name="update_payment">
                             <a 
-                                href="placed_orders.php?delete=<?= $fetch_orders['id']; ?> " class="delete-btn"
+                                href="placed_orders.php?payment_status=all&delete=<?= $fetch_orders['id']; ?>" class="delete-btn"
                                 onclick="return confirm('delete this order?)";
                             >delete</a>
                         </div>

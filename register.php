@@ -16,9 +16,9 @@
         $email = filter_var($email, FILTER_SANITIZE_STRING);
         $number = $_POST['number'];
         $number = filter_var($number, FILTER_SANITIZE_STRING);
-        $pass = sha1($_POST['pass']);
+        $pass = $_POST['pass'];
         $pass = filter_var($pass, FILTER_SANITIZE_STRING);
-        $cpass = sha1($_POST['cpass']); //securely store passwords in a database
+        $cpass = $_POST['cpass']; //securely store passwords in a database
         $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
         $address = "Street58, Blvd​ Hanoi, Sen Sok, Phnom Penh";
         $address = filter_var($address, FILTER_SANITIZE_STRING);
