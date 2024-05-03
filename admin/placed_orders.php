@@ -69,7 +69,6 @@
                     <form action="" method="POST" class="box-btn">
                         <input type="hidden" name="id" value="<?= $fetch_orders['id']; ?>">
                         <select name="payment_status" id="" class="drop-down">
-                            <option value="" selected disabled><?= $fetch_orders['payment_status']; ?></option>
                             <option value="pending">pending</option>
                             <option value="completed">completed</option>
                         </select>
